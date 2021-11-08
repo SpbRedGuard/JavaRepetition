@@ -29,10 +29,13 @@ public class TestS2 {
         students.add(st9);
         students.add(st10);
 
+        // Метод FILTER
         students = students.stream().filter(element ->
                 element.getAge() > 18 && element.getAvgGrade() < 8.2)
                 .collect(Collectors.toList());
         System.out.println(students);
+
+
     }
 
 
